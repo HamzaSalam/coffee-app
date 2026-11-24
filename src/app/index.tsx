@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 export default function IndexScreen() {
   const [myAllproducts, setMyAllProducts] = useState();
 
+  let count = 0;
+
   const getAllProducts = async () => {
     try {
       const res = await fetch("https://fakestoreapi.com/products");
