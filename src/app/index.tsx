@@ -8,6 +8,8 @@ export default function IndexScreen() {
 
   let count = 0;
 
+  let a = 9;
+
   const getAllProducts = async () => {
     try {
       const res = await fetch("https://fakestoreapi.com/products");
