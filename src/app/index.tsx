@@ -8,6 +8,11 @@ export default function IndexScreen() {
 
   let count = 0;
 
+  const incrementCount = () => {
+    count++;
+    console.log(count);
+  };
+
   const getAllProducts = async () => {
     try {
       const res = await fetch("https://fakestoreapi.com/products");
